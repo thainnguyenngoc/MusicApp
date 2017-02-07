@@ -1,4 +1,4 @@
-Descriptions for my Android App
+Descriptions for my Android App<br/>
 s<br/>
 e<br/>
 * Name: Thai Nguyen

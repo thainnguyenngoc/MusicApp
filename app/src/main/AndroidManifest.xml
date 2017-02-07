@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest
+    package="com.example.thain.musicapp"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <uses-permission android:name="android.permission.WAKE_LOCK"/>
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE"/>
+    <uses-permission android:name="android.permission.READ_PHONE_STATE"/>
+
+    <application
+        android:allowBackup="true"
+        android:enabled="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_launcher_name"
+        android:theme="@style/AppTheme">
+        <activity
+            android:name="com.example.thain.musicapp.activities.MainActivity"
+            android:launchMode="singleTask">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN"/>
+
+                <category android:name="android.intent.category.LAUNCHER"/>
+            </intent-filter>
+        </activity>
+
+        <activity
+            android:name=".activities.SettingsActivity"
+            android:label="@string/settings"
+            android:parentActivityName=".activities.MainActivity"/>
+
+        <service
+            android:name=".MusicService"
+            android:exported="false">
+            <intent-filter>
+                <action android:name="com.example.thain.musicapp.action.INIT"/>
+                <action android:name="com.example.thain.musicapp.action.FINISH"/>
+                <action android:name="com.example.thain.musicapp.action.PREVIOUS"/>
+                <action android:name="com.example.thain.musicapp.action.PAUSE"/>
+                <action android:name="com.example.thain.musicapp.action.PLAYPAUSE"/>
+                <action android:name="com.example.thain.musicapp.action.NEXT"/>
+                <action android:name="com.example.thain.musicapp.action.EDIT"/>
+                <action android:name="com.example.thain.musicapp.action.PLAYPOS"/>
+                <action android:name="com.example.thain.musicapp.action.REFRESH_LIST"/>
+                <action android:name="com.example.thain.musicapp.action.INCOMING_CALL_START"/>
+                <action android:name="com.example.thain.musicapp.action.INCOMING_CALL_STOP"/>
+                <action android:name="com.example.thain.musicapp.action.SET_PROGRESS"/>
+            </intent-filter>
+        </service>
+
+
+        <receiver
+            android:name="com.example.thain.musicapp.receivers.HeadsetPlugReceiver">
+            <intent-filter>
+                <action android:name="android.intent.action.ACTION_HEADSET_PLUG"/>
+            </intent-filter>
+        </receiver>
+
+
+        <receiver android:name="com.example.thain.musicapp.receivers.ControlActionsListener"/>
+    </application>
+</manifest>

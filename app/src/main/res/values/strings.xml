@@ -1,0 +1,37 @@
+<resources>
+    <string name="app_name">Simple Music Player</string>
+    <string name="app_launcher_name">Music Player</string>
+    <string name="playlist_empty">Your playlist is empty</string>
+    <string name="no_permissions">Permission for accessing the songs has not been granted</string>
+    <string name="delete">Delete</string>
+    <string name="properties">Properties</string>
+    <string name="edit">Edit</string>
+    <string name="undo">Undo</string>
+    <string name="title">Title</string>
+    <string name="artist">Artist</string>
+    <string name="file_name">File name</string>
+    <string name="extension">Extension</string>
+    <string name="progress" translatable="false">%1$s / %2$s</string>
+    <string name="ok">OK</string>
+    <string name="cancel">Cancel</string>
+    <string name="enable_song_repetition">Repeat current song</string>
+    <string name="disable_song_repetition">Stop repeating current song</string>
+
+    <plurals name="songs_deleted">
+        <item quantity="one">1 song deleted</item>
+        <item quantity="other">%1$d songs deleted</item>
+    </plurals>
+
+    <string name="previous">Previous</string>
+    <string name="playpause">Play Pause</string>
+    <string name="next">Next</string>
+
+    <!-- Settings -->
+    <string name="settings">Settings</string>
+    <string name="dark_theme">Dark theme</string>
+    <string name="shuffle">Shuffle</string>
+    <string name="numeric_progress">Display progress in numbers too</string>
+    <string name="sort_by">Sort tracks by</string>
+    <string name="equalizer">Equalizer</string>
+
+</resources>

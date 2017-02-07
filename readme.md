@@ -11,7 +11,9 @@
 
 * Functions
   * Reading SD card's files
-  * Play, Pause, Play *__Next/Pevious__* song, 
+  * Play, Pause, Play *__Next/Pevious__* song
+  * *__Change ground color__* to Dark or Light
+  * *__Sort track__* by tittle or artists
   * Save the *__song last state__* when receive and finish a phone call
   * Display files as *__playlist__* and play the song when touch at the view of listview
 * Tenology
